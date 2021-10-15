@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;    
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(15, 7, 116)
+}
+
+.container {    
+    max-width: 1200px;
+    margin: 1em auto;     
+}
+
+section {
+    background: #e9e3e3;
+    margin: 1em;
+    padding: 1em;
+    border: 2px solid #eee;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+}
+
+/* Heders ///////////////////////////////////////*/
+.logo__bars {    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4em;
+    padding: 0.5em;
+    background: #fff;
+    /*border: 2px solid #eee;
+    box-shadow: 2px 2px #bbb;*/        
+}
+
+.fa-bars {
+    font-size: 30px;
+    color: rgb(15, 7, 116);
+}
+
+.fas:hover {
+    opacity: 0.5;
+}
+
+.heders__josla {    
+    margin: 1em;
+    border: 2px solid #eee;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+}
+
+.nav {        
+    text-align: center;
+    padding: 0;
+    /*border: 2px solid #eee;
+    box-shadow: 2px 2px #bbb;*/
+    background: #e9e3e3;
+    list-style: none;    
+    display: none;    
+}
+
+.nav a {
+    font-size: 1rem;    
+    text-decoration: none;    
+    color: rgb(91, 86, 143);
+    text-transform: uppercase;
+    font-weight: 900;
+    border-bottom: #eee;    
+}
+
+.nav li {
+    padding: 0.5em;
+    border: 2px solid #eee;
+}
+
+.nav a:hover {
+    opacity: 0.5;
+}
+
+.fa-search, .fa-shopping-basket {
+    font-size: 1.2rem;
+    padding: 0.5em;
+} 
+/* uz_cela ///////////////////////////////////////////////// */
+.uz__cela {    
+    text-align: center;    
+    border: 2px solid #eee;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);    
+    background-image: url(img/maruta_uz_cela.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;        
+}
+
+.uz__cela--sveiciens h2{
+    text-align: right;
+    color: #fff;
+    font-size: 2rem;
+}
+/* Skaidrojums ///////////////////////////////////////////// */
+.skaidrojums p {
+    padding: 1em 0;
+}
+
+/* footer ////////////////////////////////////////////////// */
+.footer {
+    text-align: center;
+    padding:  0.5em 0;
+}
+
+.kontakti p{
+    margin-bottom: 0.5em;
+}
+
+.footer__socialie a{
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+.fab {
+    font-size: 3rem;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram-square {
+    color: red;
+}
+
+.fa-facebook-square {
+    color: blue;
+}
+
+.fa-twitter-square {
+    color: lightskyblue;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 3em;
+    }
+
+    p {
+    font-size: 1rem;
+    line-height: 1.7rem;;
+    }
+
+    .uz__cela--sveiciens h2 {
+        font-size: 4rem;
+    }
+/* footer /////////////////////////// */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kontakti p {
+    margin-bottom: 0;
+}
+
+/* uz ceļa */
+.uz__cela {
+    min-height: 400px;
+}
+}
+
+/* zemāk @media max > 1000 parāda dropdown joslu izmēriem zem 1000px */
+@media (max-width: 1000px) {
+    .heders__josla:hover .nav { display: block; }
+}
+
+
+@media (min-width: 1000px) {
+        /* Heders /////////////////////////////////////*/
+        .fa-bars {
+            display: none; 
+        }
+    
+        .heders__josla {
+            display: flex;        
+        }
+    
+        .nav {
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;            
+        }
+    
+        .nav li {
+            list-style: none;
+            border: none;        
+        }
+    
+        .nav a {
+            text-decoration: none;        
+        }
+    
+        .header__items, .header__icons {
+            display: flex;        
+            
+        }
+    
+        .header__items {
+            margin: 0 auto;
+        } 
+    
+        .header__items a{
+            font-size: 1rem;
+            font-weight: 900;
+        }
+/* uz ceļa ////////////////////////*/
+        .uz__cela {
+            min-height: 400px;
+        }
+
+        .uz__cela--sveiciens {
+            width: 50%;
+            margin-left: auto;
+            margin-right: 3em;         
+        }
+
+        .uz__cela--sveiciens h2 {
+            font-size: 5rem;        
+           
+        }
+    }
