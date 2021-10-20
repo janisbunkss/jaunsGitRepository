@@ -51,6 +51,7 @@ section {
 
 .heders__josla {    
     margin: 1em;
+    padding: 0 3em;
     border: 2px solid #eee;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
 }
@@ -87,23 +88,41 @@ section {
     font-size: 1.2rem;
     padding: 0.5em;
 } 
-/* uz_cela ///////////////////////////////////////////////// */
-.uz__cela {    
-    text-align: center;    
-    border: 2px solid #eee;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);    
-    background-image: url(maruta_uz_cela.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 200px;        
+/* slideshow ///////////////////////////////////////////////// */
+.slide_show{
+    position: relative;
 }
 
-.uz__cela--sveiciens h2{
-    text-align: right;
-    color: #fff;
-    font-size: 2rem;
+.slideshow_img {
+    width: 100%;
 }
+
+.prev, .next {
+    position: absolute;    
+    color:white;
+    font-weight: 900;
+    top: 30%;
+    padding: 0.5em;
+   
+}
+
+.prev {
+    left: 1em;    
+}
+
+.next {
+    right: 1em;    
+}
+
+.prev:hover, .next:hover {
+    cursor: pointer;
+    color: blue;
+    background: white;
+} 
+
 /* Skaidrojums ///////////////////////////////////////////// */
+
+
 .skaidrojums p {
     padding: 1em 0;
 }
@@ -153,24 +172,22 @@ section {
     line-height: 1.7rem;;
     }
 
-    .uz__cela--sveiciens h2 {
-        font-size: 4rem;
-    }
+ 
 /* footer /////////////////////////// */
-.footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-.kontakti p {
-    margin-bottom: 0;
-}
+    .kontakti p {
+        margin-bottom: 0;
+    }
 
-/* uz ceļa */
-.uz__cela {
-    min-height: 400px;
-}
+
+    .uz__cela {
+        min-height: 400px;
+    }
 }
 
 /* zemāk @media max > 1000 parāda dropdown joslu izmēriem zem 1000px */
@@ -219,19 +236,32 @@ section {
             font-size: 1rem;
             font-weight: 900;
         }
-/* uz ceļa ////////////////////////*/
-        .uz__cela {
-            min-height: 400px;
+/* slideshow ////////////////////////*/
+        .slide_show {
+            display: flex;
+            justify-content: space-between;
         }
 
-        .uz__cela--sveiciens {
-            width: 50%;
-            margin-left: auto;
+        .img_teksts {
+            width: 30%;
+        }
+      
+        .slide_show--container {
+            width: 60%;            
             margin-right: 3em;         
         }
-
-        .uz__cela--sveiciens h2 {
-            font-size: 5rem;        
-           
+        
+        .prev, .next {    
+            top: 50%;
+            font-size: 2rem;
         }
+
+        .prev {
+            left: 0;    
+        }
+        
+        .next {
+            right: 0;    
+        }
+
     }
