@@ -91,6 +91,7 @@ section {
 /* slideshow ///////////////////////////////////////////////// */
 .slide_show{
     position: relative;
+
 }
 
 .slide_show--container {
@@ -186,12 +187,7 @@ section {
 
     .kontakti p {
         margin-bottom: 0;
-    }
-
-
-    .uz__cela {
-        min-height: 400px;
-    }
+    }    
 }
 
 /* zemāk @media max > 1000 parāda dropdown joslu izmēriem zem 1000px */
@@ -245,7 +241,9 @@ section {
             display: flex;
             flex-direction: row;            
             justify-content: space-between;
-            display: none; 
+            display: none;
+            
+            
         }
       
         .slide_show--image {
@@ -257,7 +255,7 @@ section {
         }
         
         .prev, .next {    
-            top: 50%;
+            top: 150px;
             font-size: 2rem;
         }
 

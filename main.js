@@ -15,6 +15,5 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   
-  slides[slideIndex-1].style.display = "flex";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex-1].style.display = "flex";  
 }
