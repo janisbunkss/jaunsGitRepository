@@ -93,7 +93,13 @@ section {
     position: relative;
 }
 
-.slideshow_img {
+.slide_show--container {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.container_img {
     width: 100%;
 }
 
@@ -101,7 +107,7 @@ section {
     position: absolute;    
     color:white;
     font-weight: 900;
-    top: 30%;
+    top: 20%;
     padding: 0.5em;
    
 }
@@ -121,8 +127,6 @@ section {
 } 
 
 /* Skaidrojums ///////////////////////////////////////////// */
-
-
 .skaidrojums p {
     padding: 1em 0;
 }
@@ -237,18 +241,19 @@ section {
             font-weight: 900;
         }
 /* slideshow ////////////////////////*/
-        .slide_show {
+        .slide_show--container {
             display: flex;
+            flex-direction: row;            
             justify-content: space-between;
+            display: none; 
+        }
+      
+        .slide_show--image {
+            width: 65%;
         }
 
         .img_teksts {
             width: 30%;
-        }
-      
-        .slide_show--container {
-            width: 60%;            
-            margin-right: 3em;         
         }
         
         .prev, .next {    
